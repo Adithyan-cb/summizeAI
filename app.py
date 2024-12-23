@@ -4,10 +4,18 @@ import os
 from groq import Groq
 import streamlit as st
 
+
+
+st.set_page_config(
+    page_title="text summize",
+    page_icon="📚",
+)
+
 # groq api 
 client = Groq(
     api_key=st.secrets["API_KEY"]
 )
+
 
 
 

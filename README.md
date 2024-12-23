@@ -1,6 +1,6 @@
-# Text Summarization Web App  
+# SUMMIZE AI
 
-This web app provides an intuitive interface to summarize text using a powerful Large Language Model (LLM), LLaMA 3. Built with **Streamlit**, it allows users to quickly generate summaries in different styles to suit specific contexts.  
+summize AI provides an intuitive interface to summarize text using a powerful Large Language Model (LLM), LLaMA 3. Built with **Streamlit**, it allows users to quickly generate summaries in different styles to suit specific contexts.  
 
 The app supports the following summarization styles:  
 1. **Student**: Simplified summaries designed for easy comprehension, perfect for students and learners.  
@@ -20,11 +20,10 @@ The app supports the following summarization styles:
 
 ## Usage  
 
-1. Launch the app using Streamlit.  
-2. Enter the text you want to summarize in the input box.  
-3. Select your desired summarization style using the dropdown menu.  
-4. Click the **"Summarize"** button to generate the summary.  
-5. View and copy the result from the output area.  
+1. Enter the text you want to summarize in the input box.  
+2. Select your desired summarization style using the dropdown menu.  
+3. Click the **"send"** button to generate the summary.  
+
 
 ---
 
@@ -47,4 +46,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---  
 
-Enjoy using the **Text Summarization Web App**!
+Enjoy using the **SUMMIZE AI**!

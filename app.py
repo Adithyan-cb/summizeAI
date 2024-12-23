@@ -5,8 +5,8 @@ from groq import Groq
 import streamlit as st
 
 load_dotenv()
-client = Groq(api_key=os.getenv("API_KEY"))
-
+api_key = os.getenv("API_KEY")
+client = Groq(api_key=api_key)
 
 
 

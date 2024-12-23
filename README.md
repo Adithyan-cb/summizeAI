@@ -1,6 +1,8 @@
 # SUMMIZE AI
 
-summize AI provides an intuitive interface to summarize text using a powerful Large Language Model (LLM), LLaMA 3. Built with **Streamlit**, it allows users to quickly generate summaries in different styles to suit specific contexts.  
+summize AI provides an intuitive interface to summarize text using a powerful Large Language Model (LLM), LLaMA 3. Built with **Streamlit**, it allows users to quickly generate summaries in different styles to suit specific contexts.
+
+**click here to vist:** [SummizeAI](https://summize-ai.streamlit.app/)
 
 The app supports the following summarization styles:  
 1. **Student**: Simplified summaries designed for easy comprehension, perfect for students and learners.  

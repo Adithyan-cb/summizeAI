@@ -17,9 +17,7 @@ client = Groq(
 )
 
 
-
-
-################## SUMMARIZATION FUNCION #################
+################## TEXT SUMMARIZATION  #################
 
 def text_summarize(text,modes):
     normal = f"summarzie this text with the following characteristics: use bullet points,provide only the important points,short and concise,each points should be 2 or 3 sentences here is the text :{text}"

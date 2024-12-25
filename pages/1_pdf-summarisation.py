@@ -1,13 +1,19 @@
-import os
 from groq import Groq
 import streamlit as st
 from PyPDF2 import PdfReader
-import base64
 
 st.set_page_config(
-    page_title="PDF summize",
+    page_title="summize-ai-pdf-summarisation",
     page_icon="📋",
 )
+
+hide_st_style = """
+    <style>
+    #MainMenu {visibility:hidden;}
+    footer {visibility:hidden;}
+    header {visibility:hidden;}
+"""
+st.markdown(hide_st_style,unsafe_allow_html=True)
 
 # client
 client = Groq(
@@ -40,7 +46,7 @@ def text_summarize(text):
 def main():
 
     text = """
-        <h1 style="text-align:center">SUMMIZE AI 🕮</h1>
+        <h1 style="text-align:center">SUMMIZE AI 🤖</h1>
         """
 
 
@@ -52,7 +58,6 @@ def main():
 
         st.success("file uploaded succesfully...")
 
-        #pdf_bytes = uploaded_file.read()
 
         reader = PdfReader(uploaded_file)
         text = ""
@@ -62,13 +67,6 @@ def main():
         
         summary = text_summarize(text=text)
         st.write(summary)
-
-        
-        #base64_pdf = base64.b64encode(pdf_bytes).decode("utf-8")
-        #pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="700s" type="application/pdf"></iframe>'
-        
-        # Display PDF in an iframe
-        #st.markdown(pdf_display, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()

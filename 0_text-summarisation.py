@@ -7,9 +7,17 @@ import streamlit as st
 
 
 st.set_page_config(
-    page_title="text summize",
+    page_title="summize-ai-text-summarisation",
     page_icon="📚",
 )
+
+hide_st_style = """
+    <style>
+    #MainMenu {visibility:hidden;}
+    footer {visibility:hidden;}
+    header {visibility:hidden;}
+"""
+st.markdown(hide_st_style,unsafe_allow_html=True)
 
 # groq api 
 client = Groq(
@@ -63,7 +71,7 @@ def main():
         st.session_state.text_area_content = ""
 
     text = """
-    <h1 style="text-align:center">SUMMIZE AI 🕮</h1>
+    <h1 style="text-align:center">SUMMIZE AI 🤖</h1>
     """
 
 

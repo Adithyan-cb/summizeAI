@@ -69,10 +69,22 @@ def text_summarize(text,modes):
 def main():
     if "text_area_content" not in st.session_state:
         st.session_state.text_area_content = ""
-
+    
+    st.logo(image="images/summize-v2(1).png",size="large",icon_image=None)
     text = """
-    <h1 style="text-align:center">SUMMIZE AI 🤖</h1>
+    <h1 style="text-align:center">SUMMIZE AI </h1>
     """
+
+    col1, col2, col3 = st.columns([5,6,1])
+
+    with col1:
+        st.write("")
+
+    with col2:
+        st.image("images/summize-logo.png",width=100)
+
+    with col3:
+        st.write("")
 
 
     st.html(text)

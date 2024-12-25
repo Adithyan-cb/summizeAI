@@ -49,19 +49,6 @@ def main():
         <h1 style="text-align:center">SUMMIZE AI </h1>
         """
 
-    col1, col2, col3 = st.columns([5,6,1])
-
-    with col1:
-        st.write("")
-
-    with col2:
-        st.image("images/summize-logo.png",width=100)
-
-    with col3:
-        st.write("")
-
-
-
     st.html(text)
 
     uploaded_file = st.file_uploader("choose a PDF",type="PDF")

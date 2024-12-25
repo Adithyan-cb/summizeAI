@@ -70,7 +70,7 @@ def main():
     if "text_area_content" not in st.session_state:
         st.session_state.text_area_content = ""
     
-    st.logo(image="images/summize-v2(1).png",size="large",icon_image=None)
+    st.logo(image="images/summize-logo.png",size="large",icon_image=None)
     text = """
     <h1 style="text-align:center">SUMMIZE AI </h1>
     """

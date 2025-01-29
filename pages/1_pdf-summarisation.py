@@ -20,6 +20,7 @@ client = Groq(
     api_key=st.secrets["API_KEY"]
 )
 
+
 ############## TEXT SUMMARISATION #################
 def text_summarize(text):
     try:
@@ -31,7 +32,9 @@ def text_summarize(text):
                 },
                 {
                     "role":"user",
-                    "content":f"Provide a concise, clear, and accurate summary of the text. Focus on key ideas, critical details, and main points, while omitting unnecessary information. Maintain a neutral tone, and ensure the summary is proportionate to the text length. here is the text : {text}",
+                    "content":f"""act as an expert in the AI field with decades of experience , your task is to look at the text I'm providing and identify the core topics discussed and explain them in very detail to me using simple language , 
+                                you should also include examples if necessary to help the reader understand the concepts easily.the entire explanation should be understood by a person who is between beginner and intermediate in AI ,
+                                    write the entire response in markdown format. here is the text:{text}"""
                 }
             ],
             model="llama-3.1-8b-instant"
@@ -59,7 +62,7 @@ def main():
 
 
         reader = PdfReader(uploaded_file)
-        text = ""
+        pdf_text = ""
 
         for pages in reader.pages:
             text += pages.extract_text()
